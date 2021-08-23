@@ -1,0 +1,87 @@
+// title: {
+//     display: 'none',
+//     [theme.breakpoints.up('sm')]: {
+//       display: 'block',
+//     },
+//   },
+
+$theme-background: #0390fc;
+$theme-color: white;
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: $theme-background;
+  color: $theme-color;
+  height: 60px;
+  width: 100%;
+  padding: 0 30px;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+.menu-container {
+  li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+}
+.searchbar-container {
+  position: realtive;
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
+  input {
+    border: 0;
+    padding: 0 0px;
+    width: 0px;
+    height: 35px;
+    border-radius: 3px;
+    outline: none;
+    transition: 0.4s;
+    float: left;
+  }
+  &:hover {
+    input {
+      width: 250px;
+      padding: 0 10px;
+    }
+  }
+}
+.icon {
+  position: absolute;
+  top: 20px;
+  right: 3px;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 730px) {
+  .navbar-container {
+    padding: 0;
+    flex-direction: column;
+    height: 200px;
+    justify-content: center;
+  }
+  .menu-container li {
+    display: block;
+    text-align: center;
+    margin: 10px 0;
+  }
+  .icon {
+    position: absolute;
+    right: 46%;
+    top: 130px;
+    cursor: pointer;
+  }
+  .searchbar-container {
+    &:hover {
+      .icon {
+        right: 23%;
+        transition: 0.4s;
+      }
+    }
+  }
+}

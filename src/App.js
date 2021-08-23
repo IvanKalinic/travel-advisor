@@ -1,10 +1,22 @@
-import "./App.css";
+import "./App.scss";
+
+import Navbar from "./components/Navbar";
+import List from "./components/List";
+import Map from "./components/Map";
 
 const App = () => {
   return (
-    <div className="App">
-      <h1>Hello world!</h1>
-    </div>
+    <>
+      <Navbar />
+      <div className="flex-container">
+        <div>
+          <List />
+        </div>
+        <div className="map">
+          <Map />
+        </div>
+      </div>
+    </>
   );
 };
 
