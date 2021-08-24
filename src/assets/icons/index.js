@@ -6,7 +6,6 @@ export const SearchIcon = (props) => {
       // height={50}
       // width={50}
       fill="white"
-      // viewBox="-250 -250 1000 1000"
       viewBox="0 0 1024 1024"
       xmlns="http://www.w3.org/2000/svg"
       {...props}

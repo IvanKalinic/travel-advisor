@@ -1,0 +1,21 @@
+.frontpage-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+
+  @media screen and (max-width: 840px) {
+    .map {
+      width: 100%;
+    }
+    .list {
+      width: 0%;
+    }
+  }
+}
+
+.list {
+  width: 33%;
+}
+.map {
+  width: 66%;
+}

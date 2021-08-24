@@ -33,11 +33,9 @@ const Navbar = () => {
       }
       if (isOpen && event.target.tagName.toUpperCase() == "INPUT") {
         return;
-      } else {
-        toggle();
       }
-      if (!isOpen) {
-        return;
+      if (isOpen) {
+        toggle();
       }
     };
 
