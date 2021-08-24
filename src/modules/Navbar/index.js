@@ -71,7 +71,11 @@ const Navbar = () => {
           })}
         </ul>
       </div>
-      <div className="searchbar-container">
+      <div
+        className={
+          isOpen ? "searchbar-container" : "searchbar-container unvisible"
+        }
+      >
         <input type="text" placeholder="Search..." />
         <div className="icon">
           <SearchIcon />
