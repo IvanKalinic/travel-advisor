@@ -13,3 +13,10 @@
   width: 50%;
   margin-left: 10px;
 }
+.places-container {
+  display: flex;
+  flex-direction: column;
+}
+.item-container {
+  margin: 10px 0;
+}

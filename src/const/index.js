@@ -42,3 +42,13 @@ export const ratings = [
     name: "Above 4.5",
   },
 ];
+
+export const places = [
+  { name: "Cool place" },
+  {
+    name: "Best Beer",
+  },
+  {
+    name: "Best Steak",
+  },
+];
