@@ -16,6 +16,9 @@
 .places-container {
   display: flex;
   flex-direction: column;
+  overflow: scroll;
+  height: 480px;
+  overflow-x: hidden;
 }
 .item-container {
   margin: 10px 0;

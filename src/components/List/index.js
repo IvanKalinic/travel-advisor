@@ -2,9 +2,9 @@ import React, { useState } from "react";
 import SelectDropdown from "../SelectDropdown";
 import PlaceDetails from "../PlaceDetails";
 import "./index.scss";
-import { options, ratings, places } from "../../const";
+import { options, ratings } from "../../const";
 
-const List = () => {
+const List = ({ places }) => {
   const [type, setType] = useState("");
   const [rating, setRating] = useState("");
 
